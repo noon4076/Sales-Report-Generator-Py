@@ -1,8 +1,5 @@
 # Sales-Report-Generator-Py
 売上データ（JSON）を読み込み、統計情報の計算と複数形式（CSV / Text / JSON）でのレポート出力を行うPythonツールです。
-# Sales Report Generator
-
-売上データ（JSON）を読み込み、統計情報の計算と複数形式（CSV / Text / JSON）でのレポート出力を行うPythonツールです。
 
 ## 概要
 このプロジェクトは、実務での利用を想定した売上データの集計・変換ツールです。
@@ -17,12 +14,3 @@
 ## 技術スタック
 - **Language**: Python 3.x
 - **Standard Libraries**: `json`, `csv`, `os`, `datetime`
-
-## 使用方法
-1. `L2-04_sales_data.json` を実行ファイルと同じディレクトリに配置します。
-2. `python L2-04_test02.py` を実行します。
-3. 同ディレクトリに各レポートファイルが生成されます。
-
-## こだわったポイント（QA/技術者視点）
-- 不正な形式のデータが混入してもプログラムがクラッシュしないよう、型判定と例外処理を組み合わせています。
-- `ReportGenerator` クラス内で状態（`self.statistics`）を保持することで、一度計算した結果を各出力メソッドで再利用し、計算効率を高めています。
